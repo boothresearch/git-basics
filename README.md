@@ -1,4 +1,4 @@
-## Git basics
+# Git basics
 
 Git is a very powerful tool with a _lot_ of commands. Here is the small subset of commands that I use a million times a day. We'll add to our toolbelt as time goes on:
 
@@ -67,21 +67,22 @@ Git is a very powerful tool with a _lot_ of commands. Here is the small subset o
 
     If you jump to a commit like this, you'll be in a "detached" state — i.e., not on any branch. This is okay for browsing, but it's best not to make any changes.
 
-    If you want to start a new branch from this point, though, that's perfectly fine — I do that all the time when I decide I want to try a new approach. Just `git checkout -b new-branch-name` as usual.
+    If you want to start a new branch from this point, though, that's perfectly fine — I do that all the time when I decide I want to try a new approach. Just `git checkout -b new-branch-name` as usual.
 
- 1. When you're ready to send your work back to GitHub.com from your local machine:
+ 1. When you're ready to send the work you've done on a branch back to GitHub.com:
 
     ```
     git push
     ```
 
-    The very first time you `push` to a branch, it may ask you to do something like:
+    - The very first time you `push` to a branch, it may ask you to do something like:
+        
+        ```
+        git push --set-upstream origin your-branch-name
+        ```
+    - The very first time you `push` from Gitpod, it may ask you to give it permission to do so from GitHub. Go ahead and do so. 
 
-    ```
-    git push --set-upstream origin your-branch-name
-    ```
-
- 1. To retrieve the freshest version from GitHub.com, in case there have been any updates:
+ 1. To retrieve the freshest version of the branch you're on from GitHub.com, in case there have been any updates:
 
     ```
     git pull
@@ -99,4 +100,4 @@ Git is a very powerful tool with a _lot_ of commands. Here is the small subset o
 
 I know this is a lot, but our main focus today is just getting our feet wet with git. Please wave over an instructor as you experiment with these commands and ask questions; remember:
 
-> Questions are places in your mind where answers fit. If you haven’t asked the question, the answer has nowhere to go. — Clay Christensen
+> Questions are places in your mind where answers fit. If you haven’t asked the question, the answer has nowhere to go. — Clay Christensen
